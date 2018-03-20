@@ -1,7 +1,9 @@
-describe('countAllFromTown', function(){
-    it('should list all the town registration', function(){
-      var allTown = 'CL';
-      assert.deepEqual(allFromTown(allTown), 0);
+describe('The countAllFromTown', function(){
+    it('If the test passes it should list all the required town registration', function(){
+      var regNumStr = 'CL 124,CY 567,CL 345, CJ 456,CL 341';
+      assert.deepEqual(allFromTown(regNumStr), 0);
     });
-
+    it('If the test fails it supopse to return every registration', function(){
+        assert.notDeepEqual(allFromTown, true)
+    })
 });

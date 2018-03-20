@@ -1,4 +1,4 @@
-describe('findItemsOver', function(){
+describe('The findItemsOver', function(){
   it('return items that are over 20', function(){
     assert.notEqual('findItemsOver', true);
   });

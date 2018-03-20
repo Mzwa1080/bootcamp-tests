@@ -1,10 +1,10 @@
-describe('isFromBellville',  function(){
-  it('should write the registration number of bellville', function(){
-    var say = 'CY';
-    assert.equal(isFromBellville(say), true);
+describe('The isFromBellville function',  function(){
+  it('If the test passes it should write the registration number of bellville', function(){
+
+    assert.equal(isFromBellville("CY-25171"), true);
   });
-  it("should right not available" , function(){
-    var hi = "CJ"
-    assert.equal(isFromBellville(hi), false)
+  it("If the test fails it should return the wrong registration" , function(){
+
+    assert.equal(isFromBellville('CJ-655787'), false)
   })
 });
