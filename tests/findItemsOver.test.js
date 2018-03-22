@@ -1,8 +1,8 @@
-describe('The findItemsOver', function(){
-  it('return items that are over 20', function(){
-    assert.notEqual('findItemsOver', true);
+describe('The findItemsOver function', function(){
+  it('it should return items/products that are higher in Quantity than threshold', function(){
+    assert.deepEqual(findItemsOver([{name:"apples", "qty":40} , {name: "bananas", qty: 23},],20), [{"name":"apples", "qty": 40}, {"name":"bananas","qty":23},], true)
   });
-  it('shouldn\'t return items that are less than 20', function(){
-    assert.notEqual('findItemsOver', true);
+  it('it should return items/products that are lower in Quantity than threshold', function(){
+    assert.deepEqual(findItemsOver([{name:"apples", "qty":15} , {name: "bananas", qty:19 },],20), [])
   });
 });
