@@ -1,6 +1,6 @@
 describe("The regCheck function" , function(){
   it('It should check if the regNumber of MP', function(){
-      assert.notEqual(regCheck('DV 23 NB MP', 'GP'), 'MP');
+      assert.equal(regCheck('DV 23 NB GP', 'MP') ,false);
   });
   it('it should check if the regNumber is from GP', function(){
 

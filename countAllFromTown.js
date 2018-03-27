@@ -11,6 +11,3 @@ function allFromTown(regNum,locNum){
     }
   return regNumStr.length;
 }
-var fromKuilsriver = allFromTown('CL 124,CY 567,CL 345, CJ 456,CL 341','CF');
-
-assert.deepEqual(fromKuilsriver, []);

@@ -1,20 +1,13 @@
-function totalPhoneBill(bill){
-
-  var phoneBill = bill.split(', ');
-	var call = 0;
-	var sms = 0;
-
-
-  for (i= 0; i<phoneBill.length; i++){
-    var allMade = phoneBill[i]
-    if(phoneBill[i].startsWith('c')){
-      call = call + 1;
-
-    }
-    else{
-      sms = sms + 1;
+function totalPhoneBill(Bills) {
+  var totalbill = Bills.split(', ');
+  var requiredBill = 0;
+  for (var i = 0; i < totalbill.length; i++) {
+  	if (totalbill[i] == "call") {
+    	requiredBill += 2.75;
+    } else if (totalbill[i] == "sms"){
+    	requiredBill += 0.65;
     }
   }
-  var Total =  call*2.75 + sms*0.65;
-  return "R" +Total.toFixed(2);
+  // toFixed - rounds down to 2 decimal places
+  return "R" + requiredBill.toFixed(2);
 }

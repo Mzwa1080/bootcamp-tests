@@ -9,5 +9,5 @@ function allPaarl(regNo){
            }
 
     }
- 		return newRegNum2;
+ 		return newRegNum2.length;
 }

@@ -1,3 +1,4 @@
 function isWeekday(Monday){
-	return Monday.endsWith("day");
+	return !Monday.endsWith("Sunday");
+
 }

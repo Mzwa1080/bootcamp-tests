@@ -6,6 +6,6 @@ describe('The yearsAgo function', function(){
 
   it('If the test fails it shouldn\'t print out the current year', function(){
 
-      assert.notEqual(yearsAgo('2038'), true);
+      assert.equal(yearsAgo('2038'), -20);
   });
 });
